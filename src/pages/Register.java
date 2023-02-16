@@ -7,7 +7,7 @@ import tools.CreateApp;
 import tools.User;
 
 public class Register extends Actions {
-    /** **/
+    /** metoda ce realizeaza actiunea de register**/
     @Override
     public void action(final ActionsData actionsData, final CreateApp createApp,
                        final ArrayNode output) {

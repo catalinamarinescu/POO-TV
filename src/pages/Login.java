@@ -1,18 +1,14 @@
 package pages;
 
-import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.node.ArrayNode;
-import com.fasterxml.jackson.databind.node.ObjectNode;
 import input.ActionsData;
 import tools.Account;
 import tools.CreateApp;
 public class Login extends Actions {
-    /** **/
+    /** metoda ce realizeaza actiunea de login**/
     @Override
     public void action(final ActionsData actionsData, final CreateApp createApp,
                        final ArrayNode output) {
-        ObjectMapper mapper = new ObjectMapper();
-        ObjectNode node = mapper.createObjectNode();
 
         String userName = actionsData.getCredentials().getName();
         String userPassword = actionsData.getCredentials().getPassword();
